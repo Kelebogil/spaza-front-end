@@ -1,0 +1,30 @@
+<div>
+  <nav class="navbar navbar-expand navbar-dark bg-success">
+    <a routerLink="login" class="navbar-brand">Home</a>
+    <div class="navbar-nav ms-auto">
+      <li class="nav-item">
+        <a routerLink="members" class="nav-link" style="color: white; font-weight: bold;">MEMBERS</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="add" class="nav-link" style="color: white; font-weight: bold;">ADD MEMBERS</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="#" class="nav-link" style="color: white; font-weight: bold;">sign out</a>
+      </li>
+    </div>
+  </nav>
+
+  <div class="container mt-3">
+
+    
+<mat-toolbar color="primary" class="app-header">
+  
+  <span class="nav-tool-items">
+    <a mat-button routerLink="login" routerLinkActive="active">Log in</a>
+    <a mat-button mat-raised-button routerLink="register" routerLinkActive="active">Register</a>
+  </span>
+</mat-toolbar>
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
